@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFS Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>BFS Graph Visualizer</h1>
+</div>
+
+<div class="controls">
+
+    <input
+        type="text"
+        id="nodeName"
+        placeholder="Node Name (A,B,C)"
+        maxlength="1"
+    >
+
+    <button id="addNode">
+        Add Node
+    </button>
+
+    <button id="connectNodes">
+        Connect Nodes
+    </button>
+
+    <button id="startBFS">
+        Start BFS
+    </button>
+
+    <button id="reset">
+        Reset
+    </button>
+
+</div>
+
+<div class="main">
+
+    <div class="graphArea">
+
+        <svg id="edges"></svg>
+
+        <div id="graph"></div>
+
+    </div>
+
+    <div class="infoPanel">
+
+        <h2>Visited</h2>
+        <div id="visited"></div>
+
+        <h2>Queue</h2>
+        <div id="queue"></div>
+
+        <h2>Traversal</h2>
+        <div id="traversal"></div>
+
+        <h2>Status</h2>
+        <div id="status">
+            Ready...
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
